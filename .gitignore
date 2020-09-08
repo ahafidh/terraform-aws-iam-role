@@ -33,3 +33,4 @@ tmp
 Berksfile.lock
 *.swp
 terraform.tfstate.d/
+.idea/
