@@ -13,10 +13,10 @@ resource "aws_iam_role" "this" {
   max_session_duration  = var.role_max_session_duration
 
   tags = merge(var.role_tags, map(
-    Name, var.role_name,
-    Environment, var.environment,
-    ProductDomain, var.product_domain,
-    Description, var.role_description,
-    ManagedBy, "terraform",
+    "Name", var.role_name,
+    "Environment", var.environment,
+    "ProductDomain", var.product_domain,
+    "Description", var.role_description,
+    "ManagedBy", "terraform",
   ))
 }
